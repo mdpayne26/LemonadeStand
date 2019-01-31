@@ -6,8 +6,23 @@ using System.Threading.Tasks;
 
 namespace lemonadeStandPractice
 {
-    public abstract class Day
+    public class Day
     {
+        internal Weather Weather
+        {
+            get => default(Weather);
+            set
+            {
+            }
+        }
+
+        internal Customer Customer
+        {
+            get => default(Customer);
+            set
+            {
+            }
+        }
 
         public void speedUpTime()
         {

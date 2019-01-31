@@ -5,7 +5,8 @@ using System.Text;
 
 namespace lemonadeStandPractice
 {
-    public abstract class Inventory : Player
+    public abstract class Inventory
     {
+        List<Lemons> lemons = new List<Lemons>();
     }
 }

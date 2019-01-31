@@ -26,15 +26,29 @@ namespace lemonadeStandPractice
 
     class Game
     {
-        private int Player;
+        Day day = new Day();
+        Store store = new Store();
+        Recipe recipe = new Recipe();
+        Player player = new Player();
+        Wallet wallet = new Wallet();
+        Weather weather = new Weather();
+        Customer customer = new Customer();
+        
+        
+
+
+
 
         internal Store Store
         {
-            get => default(Store);
-            set
-            {
-            }
-        }
+        
+
+
+        //get => default(Store);
+        //set
+        //{
+        //}
+    }
 
         internal Day Day
         {
@@ -54,7 +68,7 @@ namespace lemonadeStandPractice
 
         public void RunGame()
         {
-            throw new System.NotImplementedException();
+           
         }
 
         public void AskPlayAgain()
@@ -64,7 +78,9 @@ namespace lemonadeStandPractice
 
         public void DisplayRules()
         {
-            throw new System.NotImplementedException();
+            Console.Write("Welcome to my console version of Lemonade Stand. You will have 7 days to try and make as much money as possible.");
+            
+            
         }
 
         public void DifficultyLevel()

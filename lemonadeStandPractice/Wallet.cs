@@ -5,8 +5,8 @@ using System.Text;
 
 namespace lemonadeStandPractice
 {
-    public class Wallet : Player
+    public class Wallet
     {
-        private int Cash;
+        public int Cash;
     }
 }

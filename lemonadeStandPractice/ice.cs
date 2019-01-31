@@ -7,5 +7,6 @@ namespace lemonadeStandPractice
 {
     public class Ice : Inventory
     {
+        private int amount;
     }
 }

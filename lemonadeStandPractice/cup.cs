@@ -7,5 +7,6 @@ namespace lemonadeStandPractice
 {
     public class Cup : Inventory
     {
+        private int amount;
     }
 }

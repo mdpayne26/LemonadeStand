@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lemonadeStandPractice
 {
-    class Weather : Day
+    class Weather
     {
         public void GetDailyWeather()
         {
