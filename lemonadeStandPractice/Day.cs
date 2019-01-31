@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace lemonadeStandPractice
 {
-    class Day
+    public abstract class Day
     {
-        private int weather;
 
         public void speedUpTime()
         {

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace lemonadeStandPractice
 {
-    public class Recipe
+    public class Recipe : Player
     {
     }
 }

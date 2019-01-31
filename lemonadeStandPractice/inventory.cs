@@ -5,7 +5,7 @@ using System.Text;
 
 namespace lemonadeStandPractice
 {
-    public class Ice : Inventory
+    public abstract class Inventory : Player
     {
     }
 }

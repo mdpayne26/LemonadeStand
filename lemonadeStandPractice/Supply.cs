@@ -5,11 +5,4 @@ using System.Text;
 
 namespace lemonadeStandPractice
 {
-    public class Supply
-    {
-    }
-
-    public abstract class supply
-    {
-    }
 }

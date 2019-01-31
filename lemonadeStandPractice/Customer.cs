@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lemonadeStandPractice
 {
-    class Customer
+    class Customer : Day
     {
         public void PaymentPrice()
         {

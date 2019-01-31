@@ -9,8 +9,24 @@ namespace lemonadeStandPractice
     class Store
     {
         private int CurrentIngredients;
+        private int Prices;
 
-        public void PurchasingIngredients()
+        public void SellLemons()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void SellSugar()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void SellCups()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void SellIce()
         {
             throw new System.NotImplementedException();
         }

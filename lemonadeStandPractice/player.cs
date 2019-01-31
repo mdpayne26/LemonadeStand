@@ -6,15 +6,7 @@ using System.Threading.Tasks;
 
 namespace lemonadeStandPractice
 {
-    public class Player
+    public abstract class Player
     {
-        public Wallet wallet = new Wallet();
-        
-        
-        
-        
-        //{
-        //    throw new System.NotImplementedException();
-        //}
     }
 }
