@@ -8,7 +8,6 @@ namespace lemonadeStandPractice
 {
     class Game
     {
-        private int CashBox;
         private int PlayerOne;
 
         internal Player player
@@ -38,6 +37,46 @@ namespace lemonadeStandPractice
         internal Day Day
         {
             get => default(Day);
+            set
+            {
+            }
+        }
+
+        internal Weather Weather
+        {
+            get => default(Weather);
+            set
+            {
+            }
+        }
+
+        public Wallet Wallet
+        {
+            get => default(Wallet);
+            set
+            {
+            }
+        }
+
+        public Supply Supply
+        {
+            get => default(Supply);
+            set
+            {
+            }
+        }
+
+        public Recipe recipe
+        {
+            get => default(Recipe);
+            set
+            {
+            }
+        }
+
+        public supply supply
+        {
+            get => default(supply);
             set
             {
             }

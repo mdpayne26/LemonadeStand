@@ -17,7 +17,7 @@
   <Class Name="lemonadeStandPractice.Game">
     <Position X="5.25" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAKABAAIAAAAAAAAAAAAAIEAABAAQAAQAAAAA=</HashCode>
+      <HashCode>AAEEAAAAKABAQIAAAAAAAAAAACAIAAARAAQAAQAABAA=</HashCode>
       <FileName>game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -25,12 +25,16 @@
       <Property Name="Store" />
       <Property Name="Customer" />
       <Property Name="Day" />
+      <Property Name="Weather" />
+      <Property Name="Wallet" />
+      <Property Name="recipe" />
+      <Property Name="supply" />
     </ShowAsAssociation>
   </Class>
   <Class Name="lemonadeStandPractice.Player">
     <Position X="2.75" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>player.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -56,10 +60,59 @@
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Weather">
-    <Position X="0.75" Y="3.5" Width="1.5" />
+    <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Weather.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lemonadeStandPractice.Wallet">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wallet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lemonadeStandPractice.Recipe">
+    <Position X="5.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>recipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lemonadeStandPractice.supply">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Supply.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lemonadeStandPractice.Cup">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>cup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lemonadeStandPractice.Sugar">
+    <Position X="8.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sugar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lemonadeStandPractice.Lemons">
+    <Position X="10.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lemons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lemonadeStandPractice.Ice">
+    <Position X="12.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ice.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="10" />

@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace lemonadeStandPractice
 {
-    class UserInterface
+    public class Supply
+    {
+    }
+
+    public abstract class supply
     {
     }
 }

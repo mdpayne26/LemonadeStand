@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace lemonadeStandPractice
 {
-    public abstract class Player
+    public class Player
     {
-        public string name;
-        public abstract void GetPlayerName();
+        public Wallet wallet = new Wallet();
+        
         
         
         
