@@ -5,33 +5,25 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace lemonadeStandPractice
-{
+{   
     public class Day
     {
-        internal Weather Weather
+
+
+        public Weather weather;
+        public Day()
         {
-            get => default(Weather);
-            set
-            {
-            }
+            weather = new Weather();
         }
 
         internal Customer Customer
         {
-            get => default(Customer);
-            set
-            {
-            }
-        }
-
-        public void speedUpTime()
-        {
-            throw new System.NotImplementedException();
+            
         }
 
         public void setDailyPrice()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

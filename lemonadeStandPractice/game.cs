@@ -26,29 +26,52 @@ namespace lemonadeStandPractice
 
     class Game
     {
-        Day day = new Day();
+        Day day;
+        int x;
         Store store = new Store();
         Recipe recipe = new Recipe();
         Player player = new Player();
         Wallet wallet = new Wallet();
         Weather weather = new Weather();
         Customer customer = new Customer();
-        
-        
+        List<Day> Days = new List<Day>();
+       
+
+        public void DisplayWeather()
+        {
+            foreach(Day day in Days)
+            {
+                Console.WriteLine(day.weather.Tempurature);
+                Console.WriteLine(day.weather.Condition);
+            }
+        }
 
 
+
+        public void GenerateDays()
+        {
+            for (int i = 0; i < 7; i++)
+            {
+                day = new Day();
+                Days.Add(day);
+            }
+            Days[2].weather.Condition;
+        }
+
+        
+        public void GenerateEvents()
+        {
+
+        }
 
 
         internal Store Store
         {
-        
-
-
-        //get => default(Store);
-        //set
-        //{
-        //}
-    }
+            get => default(Store);
+            set
+            {
+            }
+        }
 
         internal Day Day
         {
@@ -66,6 +89,14 @@ namespace lemonadeStandPractice
             }
         }
 
+        internal Store Store1
+        {
+            get => default(Store);
+            set
+            {
+            }
+        }
+
         public void RunGame()
         {
            
@@ -73,19 +104,25 @@ namespace lemonadeStandPractice
 
         public void AskPlayAgain()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void DisplayRules()
         {
-            Console.Write("Welcome to my console version of Lemonade Stand. You will have 7 days to try and make as much money as possible.");
+            
             
             
         }
 
-        public void DifficultyLevel()
+        // difficulty level just changes the amount of starting cash
+        //public void DifficultyLevel()
+        //{
+            
+        //}
+
+        public void RunPurchaseLogic()
         {
-            throw new System.NotImplementedException();
+            store.SellLemons(player, 10);
         }
     }
 }

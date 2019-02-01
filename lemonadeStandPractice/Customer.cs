@@ -10,7 +10,8 @@ namespace lemonadeStandPractice
     {
         public void PaymentPrice()
         {
-            throw new System.NotImplementedException();
+           
+           // create a list of customers that are different and like different things and make them random 
         }
     }
 }

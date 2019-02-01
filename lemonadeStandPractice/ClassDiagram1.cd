@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="lemonadeStandPractice.Customer">
-    <Position X="11.5" Y="7" Width="1.5" />
+    <Position X="9.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Day">
-    <Position X="7.25" Y="6.75" Width="1.5" />
+    <Position X="6.25" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAQAAAA=</HashCode>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAAA=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Weather" />
       <Property Name="Customer" />
     </ShowAsAssociation>
   </Class>
   <Class Name="lemonadeStandPractice.Game">
     <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABIABAAIAAgAAAIAAAAAAIAAABAAQAAQAAAAA=</HashCode>
-      <FileName>game.cs</FileName>
+      <HashCode>AAAggAABIABAQIAAgAAAJAAAABAAAQABQARAAQAEAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+      <NewMemberFileName>game.cs</NewMemberFileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Store" />
       <Property Name="Day" />
       <Property Name="Player1" />
+      <Property Name="Store1" />
     </ShowAsAssociation>
   </Class>
   <Class Name="lemonadeStandPractice.Program">
@@ -40,7 +40,7 @@
   <Class Name="lemonadeStandPractice.Store">
     <Position X="10.25" Y="2" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAACAUAEAAAABAAAAAQAAAAAAAAAAAAAAACgAA=</HashCode>
+      <HashCode>AAAAAQAACAUAEAAAABAAAAAQAAAAAAAAAACAAAACgAA=</HashCode>
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -48,20 +48,20 @@
     <Position X="14.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>userIterface.cs</FileName>
+      <FileName>UserInterface.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Weather">
-    <Position X="9.75" Y="7" Width="1.5" />
+    <Position X="9.25" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAbAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Weather.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Wallet">
     <Position X="3" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Wallet.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -69,49 +69,56 @@
     <Position X="5.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>recipe.cs</FileName>
+      <FileName>Recipe.cs</FileName>
+      <NewMemberFileName>recipe.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Cup">
     <Position X="2.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>cup.cs</FileName>
+      <FileName>Cup.cs</FileName>
+      <NewMemberFileName>cup.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Sugar">
     <Position X="2.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>sugar.cs</FileName>
+      <FileName>Sugar.cs</FileName>
+      <NewMemberFileName>sugar.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="lemonadeStandPractice.Lemons">
+  <Class Name="lemonadeStandPractice.Lemon">
     <Position X="4.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>lemons.cs</FileName>
+      <FileName>Lemons.cs</FileName>
+      <NewMemberFileName>lemons.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Ice">
     <Position X="4.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ice.cs</FileName>
+      <FileName>Ice.cs</FileName>
+      <NewMemberFileName>ice.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Inventory">
-    <Position X="3.5" Y="3.25" Width="1.5" />
+    <Position X="1" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
-      <FileName>inventory.cs</FileName>
+      <HashCode>AABAgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Inventory.cs</FileName>
+      <NewMemberFileName>inventory.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Player">
     <Position X="5.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgAAAAA=</HashCode>
-      <FileName>player.cs</FileName>
+      <FileName>Player.cs</FileName>
+      <NewMemberFileName>player.cs</NewMemberFileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Inventory" />

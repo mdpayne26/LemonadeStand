@@ -7,20 +7,50 @@ using System.Threading.Tasks;
 namespace lemonadeStandPractice
 {
     class Store
+        // set prices for ingredients
+        // make a method for purchasing ingredients
     {
-        private int lemonPrice;
-        private int cupPrice;
-        private int icePrice;
-        private int sugarPrice;
+        //public double lemonPrice;
+        //public double cupPrice;
+        //public double icePrice;
+        //public double sugarPrice;
+
+        private double lemonPrice;
+        public double LemonPrice
+        {
+            get => lemonPrice;
+            set => lemonPrice = .30;
+        }
+
+        private double sugarPrice;
+        public double SugarPrice
+        {
+            get => sugarPrice;
+            set => sugarPrice = 2.50;
+        }
+
+        private double cupPrice;
+        public double CupPrice
+        {
+            get => cupPrice;
+            set => cupPrice = .05;
+        }
+
+        private double icePrice;
+        public double IcePrice
+        {
+            get => icePrice;
+            set => icePrice = 1.50;
+        }
 
         public void SellLemons(Player player, int quantity)
         {
-            if (player.Wallet.Cash >= (lemonPrice * 10))
+            if (player.Wallet.Cash >= (lemonPrice * quantity))
             {
-                for(int i = 0; i < qty; i++)
+                for(int i = 0; i < quantity; i++)
                 {
-                    Lemons lemon = new Lemons();
-                    player.Inventory.lemonPrice.Add(lemon);
+                    Lemon lemon = new Lemon();
+                    player.Inventory.lemons.Add(lemon);
                 }
             }
            
@@ -30,10 +60,10 @@ namespace lemonadeStandPractice
         {
             if (player.Wallet.Cash >= (sugarPrice * 10))
             {
-                for (int i = 0; i < qty; i++)
+                for (int i = 0; i < quantity; i++)
                 {
                     Sugar sugar = new Sugar();
-                    player.Inventory.sugarPrice.Add(sugar);
+                    player.Inventory.sugar.Add(sugar);
                 }
             }
         }
@@ -42,10 +72,10 @@ namespace lemonadeStandPractice
         {
             if (player.Wallet.Cash >= (cupPrice * 10))
             {
-                for (int i = 0; i < qty; i++)
+                for (int i = 0; i < quantity; i++)
                 {
                     Cup cup = new Cup();
-                    player.Inventory.cupPrice.Add(cup);
+                    player.Inventory.cup.Add(cup);
                 }
             }
         }
@@ -54,10 +84,10 @@ namespace lemonadeStandPractice
         {
             if (player.Wallet.Cash >= (icePrice * 10))
             {
-                for (int i = 0; i < qty; i++)
+                for (int i = 0; i < quantity; i++)
                 {
                     Ice ice = new Ice();
-                    player.Inventory.icePrice.Add(ice);
+                    player.Inventory.ice.Add(ice);
                 }
             }
         }
