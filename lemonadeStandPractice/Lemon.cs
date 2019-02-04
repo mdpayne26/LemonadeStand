@@ -5,9 +5,12 @@ using System.Text;
 
 namespace lemonadeStandPractice
 {
-    public class Lemon : Inventory
+    public class Lemon : Item
     {   // stores amount item
         // use a random generator for what days a percentage of lemons go bad
-        private int amount;
+
+
+
+        public int amount;
     }
 }

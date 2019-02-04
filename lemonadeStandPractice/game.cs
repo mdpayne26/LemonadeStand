@@ -28,9 +28,9 @@ namespace lemonadeStandPractice
     {
         Day day;
         int x;
-        People people;
-        Prices prices;
-        SetDailyPrice setDailyPrice;
+        //People people;
+        //Prices prices;
+        
         Store store = new Store();
         Recipe recipe = new Recipe();
         Player player = new Player();
@@ -56,10 +56,13 @@ namespace lemonadeStandPractice
         {
             for (int i = 0; i < 7; i++)
             {
-                //day = new Day();
+                day = new Day();
                 Days.Add(day);
+
+                Console.WriteLine(Days[i].weather.Condition);
+                Console.WriteLine(Days[i].weather.Tempurature);
+                Console.ReadLine();
             }
-            Days[].weather.Condition;
         }
 
         
@@ -74,13 +77,13 @@ namespace lemonadeStandPractice
             }
         }
 
-        internal Day Day
-        {
-            get => default(Day);
-            set
-            {
-            }
-        }
+        //internal Day Day
+        //{
+        //    get => default(Day);
+        //    set
+        //    {
+        //    }
+        //}
 
         public Player Player1
         {
@@ -90,16 +93,11 @@ namespace lemonadeStandPractice
             }
         }
 
-        internal Store Store1
-        {
-            get => default(Store);
-            set
-            {
-            }
-        }
+      
 
         public void RunGame()
         {
+            GenerateDays();
            
         }
 

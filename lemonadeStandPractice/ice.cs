@@ -5,9 +5,11 @@ using System.Text;
 
 namespace lemonadeStandPractice
 {
-    public class Ice : Inventory
+    public class Ice : Item
     {   // stores amount item
         //ice melts at the end of every day
-        private int amount;
+        public int amount;
+
+        
     }
 }

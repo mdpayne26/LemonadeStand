@@ -27,9 +27,6 @@ namespace lemonadeStandPractice
         //{
 
         //}
-        public double buyIngredients()
-        {
-            Cash - itemPrice = 
-        }
+        
     }
 }

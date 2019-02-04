@@ -3,14 +3,14 @@
   <Class Name="lemonadeStandPractice.Customer">
     <Position X="9.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAIAAAACAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Day">
     <Position X="6.25" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAAA=</HashCode>
+      <HashCode>AAAAAAABAQAAAAAAAAAAAAAAABAAACAAAAAAAAQAAAA=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -20,14 +20,12 @@
   <Class Name="lemonadeStandPractice.Game">
     <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAggAABIABAQIAAgAAAJAAAABAAAQABQARAAQAAAAA=</HashCode>
+      <HashCode>AAAggAABAABAQIAAgAAAJAAAABAAAQABQARAAQAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
       <NewMemberFileName>game.cs</NewMemberFileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Day" />
       <Property Name="Player1" />
-      <Property Name="Store1" />
     </ShowAsAssociation>
   </Class>
   <Class Name="lemonadeStandPractice.Program">
@@ -45,7 +43,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.UserInterface" Collapsed="true">
-    <Position X="14.5" Y="3.25" Width="1.5" />
+    <Position X="12.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UserInterface.cs</FileName>
@@ -61,7 +59,7 @@
   <Class Name="lemonadeStandPractice.Wallet">
     <Position X="3" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Wallet.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -93,8 +91,7 @@
     <Position X="4.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Lemons.cs</FileName>
-      <NewMemberFileName>lemons.cs</NewMemberFileName>
+      <FileName>Lemon.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Ice">
@@ -108,23 +105,32 @@
   <Class Name="lemonadeStandPractice.Inventory">
     <Position X="1" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <HashCode>AABAgAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>Inventory.cs</FileName>
       <NewMemberFileName>inventory.cs</NewMemberFileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Item" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="lemonadeStandPractice.Player">
     <Position X="5.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgAAAAA=</HashCode>
+      <HashCode>BAAAAABAAAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
       <NewMemberFileName>player.cs</NewMemberFileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Inventory" />
       <Property Name="Wallet" />
       <Property Name="Recipe" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="lemonadeStandPractice.Item">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="10" />
 </ClassDiagram>

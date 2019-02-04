@@ -14,7 +14,7 @@ namespace lemonadeStandPractice
         //public double cupPrice;
         //public double icePrice;
         //public double sugarPrice;
-
+        
         private double lemonPrice;
         public double LemonPrice
         {
@@ -50,8 +50,10 @@ namespace lemonadeStandPractice
                 for(int i = 0; i < quantity; i++)
                 {
                     Lemon lemon = new Lemon();
-                    player.Inventory.lemons.Add(lemon);
+                    //player.inventory.lemons.Add(lemon);
+                    player.inventory.lemons.amount = quantity;
                 }
+                player.Wallet.Cash -= lemonPrice * quantity;
             }
            
         }
@@ -63,8 +65,10 @@ namespace lemonadeStandPractice
                 for (int i = 0; i < quantity; i++)
                 {
                     Sugar sugar = new Sugar();
-                    player.Inventory.sugar.Add(sugar);
+                    //player.inventory.sugar.Add(sugar);
+                    player.inventory.sugar.amount = quantity;
                 }
+                player.Wallet.Cash -= sugarPrice * quantity;
             }
         }
 
@@ -75,8 +79,11 @@ namespace lemonadeStandPractice
                 for (int i = 0; i < quantity; i++)
                 {
                     Cup cup = new Cup();
-                    player.Inventory.cup.Add(cup);
+                    //player.inventory.cup.Add(cup);
+                    player.inventory.cup.amount = quantity;
+                   
                 }
+                player.Wallet.Cash -= cupPrice * quantity;
             }
         }
 
@@ -87,8 +94,10 @@ namespace lemonadeStandPractice
                 for (int i = 0; i < quantity; i++)
                 {
                     Ice ice = new Ice();
-                    player.Inventory.ice.Add(ice);
+                    //player.inventory.ice.Add(ice);
+                    player.inventory.ice.amount = quantity;
                 }
+                player.Wallet.Cash -= icePrice * quantity;
             }
         }
     }

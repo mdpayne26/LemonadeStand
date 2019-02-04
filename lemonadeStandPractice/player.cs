@@ -8,7 +8,7 @@ namespace lemonadeStandPractice
 {
     public class Player
     {
-        public Inventory Inventory
+        public Inventory inventory
         {
             get => default(Inventory);
             set
@@ -31,5 +31,11 @@ namespace lemonadeStandPractice
             {
             }
         }
+
+        public void SetDailyPrice()
+        {
+
+        }
+
     }
 }
