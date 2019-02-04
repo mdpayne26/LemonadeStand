@@ -13,5 +13,7 @@ namespace lemonadeStandPractice
            
            // create a list of customers that are different and like different things and make them random 
         }
+
+        public void 
     }
 }

@@ -10,7 +10,7 @@ namespace lemonadeStandPractice
     {
         public int Tempurature;
         public string Condition;
-        public string[] Connditions = new string[3] { "Sunny", "CLoudy", "Foggy" };
+        public string[] Connditions = new string[4] { "Sunny", "CLoudy", "Foggy", "Raining" };
 
 
         public Weather()
@@ -32,7 +32,7 @@ namespace lemonadeStandPractice
         public string GetCondition()
         {
             Random rng = new Random();
-            int index = rng.Next(0, 3);
+            int index = rng.Next(0, 4);
             string result = Connditions[index];
 
             return result;

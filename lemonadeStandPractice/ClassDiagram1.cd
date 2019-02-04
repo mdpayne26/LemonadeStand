@@ -10,17 +10,17 @@
   <Class Name="lemonadeStandPractice.Day">
     <Position X="6.25" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAAA=</HashCode>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAAA=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Customer" />
+      <Field Name="customer" />
     </ShowAsAssociation>
   </Class>
   <Class Name="lemonadeStandPractice.Game">
     <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAggAABIABAQIAAgAAAJAAAABAAAQABQARAAQAEAAA=</HashCode>
+      <HashCode>AAAggAABIABAQIAAgAAAJAAAABAAAQABQARAAQAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
       <NewMemberFileName>game.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -125,13 +125,6 @@
       <Property Name="Wallet" />
       <Property Name="Recipe" />
     </ShowAsAssociation>
-  </Class>
-  <Class Name="lemonadeStandPractice.Rules">
-    <Position X="14.5" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Rules.cs</FileName>
-    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="10" />
 </ClassDiagram>

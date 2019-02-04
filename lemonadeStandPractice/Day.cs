@@ -16,14 +16,16 @@ namespace lemonadeStandPractice
             weather = new Weather();
         }
 
-        internal Customer Customer
+        public Customer customer;
+        public People()
         {
-            
+            customer = new Customer();
         }
 
-        public void setDailyPrice()
+        public SetDailyPrice setDailyPrice;
+        public Prices()
         {
-            
+            setDailyPrice = new SetDailyPrice();
         }
     }
 }
