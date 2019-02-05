@@ -31,5 +31,7 @@ namespace lemonadeStandPractice
             int result = int.Parse(Console.ReadLine());
             return result;
         }
+
+       
     }
 }

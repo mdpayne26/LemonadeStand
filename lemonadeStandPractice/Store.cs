@@ -15,10 +15,13 @@ namespace lemonadeStandPractice
         //public double icePrice;
         //public double sugarPrice;
         
-        private double lemonPrice = .30;
-        private double sugarPrice = 2.50;
+        
+        private double lemonPrice = .20;
+        private double sugarPrice = .25;
         private double cupPrice = .05;
-        private double icePrice = .10;
+        private double icePrice = .01;
+
+        
 
         public double LemonPrice
         {
@@ -101,8 +104,10 @@ namespace lemonadeStandPractice
                    
                 }
                 player.Wallet.Cash -= cupPrice * quantity;
+
             }
         }
+
 
         public void SellIce(Player player, int quantity)
         {

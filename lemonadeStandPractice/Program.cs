@@ -12,11 +12,7 @@ namespace lemonadeStandPractice
 
         static void Main(string[] args)
         {
-            //UserInterface userInterface = new UserInterface();
-            //userInterface.PlayerSupply();
-
-            //Day day = new Day();
-            //day.GeneratePeople();
+            
 
             Game game = new Game();
             game.RunGame();

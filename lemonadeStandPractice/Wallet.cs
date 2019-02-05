@@ -7,7 +7,8 @@ namespace lemonadeStandPractice
 {
     public class Wallet
     {   // starting cash
-        public double Cash = 10;
+        public double Cash = 30;
+
         
         
         

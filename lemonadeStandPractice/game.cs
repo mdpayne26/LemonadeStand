@@ -44,6 +44,7 @@ namespace lemonadeStandPractice
 
 
 
+
         public void DisplayWeather()
         {
             foreach(Day day in Days)
@@ -67,11 +68,6 @@ namespace lemonadeStandPractice
                 Console.ReadLine();
             }
         }
-
-
-
-
-
         internal Store Store
         {
             get => store;
@@ -83,7 +79,7 @@ namespace lemonadeStandPractice
 
         internal Day Day
         {
-            get => Day;
+            get => day;
             set
             {
                 day = value;
@@ -92,7 +88,7 @@ namespace lemonadeStandPractice
 
         public Player Player
         {
-            get => Player;
+            get => player;
             set
             {
                 player = value;
@@ -117,25 +113,16 @@ namespace lemonadeStandPractice
             GenerateDays();
 
             UserInterface.DisplayPlayerSupply(player.Inventory);
-
-            Console.WriteLine(Store.LemonPrice);
-            int Lemon.amount = UserInterface.GetInt("How many lemons would you like to buy?");
-            Console.WriteLine(Store.SugarPrice);
-            int Sugar = UserInterface.GetInt("How much sugar would you like to buy?");
-            Console.WriteLine(Store.IcePrice);
-            int Ice = UserInterface.GetInt("How many ice cubes would you like to buy?");
-            Console.WriteLine(Store.CupPrice);
-            int Cups = UserInterface.GetInt("How many cups would you like to buy?");
-
+            
+            RunPurchaseLogic();
+            
             UserInterface.DisplayPlayerSupply(player.Inventory);
 
+            RunRecipeLogic();
+            //Player.Recipe.MakePlayerRecipe(Player.Inventory);
+            UserInterface.DisplayPlayerSupply(player.Inventory);
 
-
-
-            //Console.WriteLine(Store.LemonPrice);
-            //Console.ReadLine();
-
-
+            Day.MakePlayerRecipe(Player, Inventory, recipe);
 
 
         }
@@ -145,18 +132,67 @@ namespace lemonadeStandPractice
             
         }
 
-        
+
 
         // difficulty level just changes the amount of starting cash
         //public void DifficultyLevel()
         //{
-            
+
         //}
 
         public void RunPurchaseLogic()
         {
-            string prompt = "Would you like to purchase ingredients?";
-            store.SellLemons(player, UserInterface.GetInt(prompt));
+            Console.WriteLine("Current cash: " + player.Wallet.Cash);
+            Console.WriteLine(Store.LemonPrice);
+            string promptLemon = "How many lemons would you like to buy";
+            store.SellLemons(player, UserInterface.GetInt(promptLemon));
+            Console.WriteLine("Current cash: " + player.Wallet.Cash);
+            Console.WriteLine(Store.SugarPrice);
+            string promptSugar = "How much sugar would you like to buy?";
+            store.SellSugar(player, UserInterface.GetInt(promptSugar));
+            Console.WriteLine("Current cash: " + player.Wallet.Cash);
+            Console.WriteLine(Store.IcePrice);
+            string promptIce = "How many ice cubes would you like to buy?";
+            store.SellIce(player, UserInterface.GetInt(promptIce));
+            Console.WriteLine("Current cash: " + player.Wallet.Cash);
+            Console.WriteLine(Store.CupPrice);
+            string promptCup = "How many cups would you like to buy?";
+            store.SellCups(player, UserInterface.GetInt(promptCup));
+            Console.WriteLine("Current cash: " + player.Wallet.Cash);
+        }
+
+        public void RunRecipeLogic()
+        {
+            Console.WriteLine("Choose how many lemons you would like in each pitcher made.");
+            player.recipe.numLemonPerPitcher = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Choose how many cups of sugar you would like in each pitcher.");
+            player.Recipe.numSugarPerPitcher = int.Parse(Console.ReadLine());
+            Console.WriteLine("Choose how many ice cubes will be in each cup.");
+            player.Recipe.numIcePerPitcher = int.Parse(Console.ReadLine());
         }
     }
 }
+
+            
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+

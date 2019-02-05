@@ -11,11 +11,12 @@ namespace lemonadeStandPractice
 
         private Inventory inventory;
         private Wallet wallet;
-        private Recipe recipe;
+        public Recipe recipe;
         //private SetDailyPrice setDailyPrice;
 
         public Player()
         {
+            recipe = new Recipe();
             inventory = new Inventory();
             wallet = new Wallet();
         }
@@ -44,6 +45,14 @@ namespace lemonadeStandPractice
             set
             {
                 recipe = value;
+            }
+        }
+        public Day Day
+        {
+            get => Day;
+            set
+            {
+                Day = value;
             }
         }
 

@@ -12,6 +12,7 @@ namespace lemonadeStandPractice
         public Ice ice;
         public Sugar sugar;
         public Cup cup;
+        private Recipe recipe;
 
         public Inventory()
         {
@@ -19,6 +20,7 @@ namespace lemonadeStandPractice
             ice = new Ice();
             sugar = new Sugar();
             cup = new Cup();
+            
         }
 
 
@@ -30,34 +32,17 @@ namespace lemonadeStandPractice
             }
         }
 
-        //List<Cup> cups = new List<Cup>();
+        public Recipe Recipe
+        {
+            get => recipe;
+            set
+            {
+                recipe = value;
+            }
+        }
 
-        //List<Lemon> lemons = new List<Lemon>();
-        
 
-        //List<Sugar> sugars = new List<Sugar>();
-
-        //List<Ice> ices = new List<Ice>();
-        
-        //public Cup Cup;
-        //{
-
-        //}
-
-        //public Lemon Lemons;
-        //{
-
-        //}
-
-        //public Sugar Sugar;
-        //{
-
-        //}
-
-        //public Ice Ice;
-        //{
-
-        //}
+       
     }
 }
 

@@ -12,8 +12,8 @@ namespace lemonadeStandPractice
         bool isBuying;
         //public void PaymentPrice()
         //{
-           
-           // create a list of customers that are different and like different things and make them random 
+
+        // create a list of customers that are different and like different things and make them random 
         //}
 
         public Customer()
