@@ -16,16 +16,30 @@ namespace lemonadeStandPractice
         {
             customers = new List<Customer>();
             weather = new Weather();
+            GeneratePeople();
+
         }
 
-        
+
         public void GeneratePeople()
         {
-            for (int i = 0; i < 5; i++)
+            if (weather.Tempurature > 60)
             {
-                customer = new Customer();
-                customers.Add(customer);
+                for (int i = 0; i < 5; i++)
+                {
+                    customer = new Customer();
+                    customers.Add(customer);
+                }
             }
+            else if (weather.Condition == "Sunny")
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    customer = new Customer();
+                    customers.Add(customer);
+                }
+            }
+            
            
         }
 

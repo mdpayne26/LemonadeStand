@@ -10,11 +10,11 @@ namespace lemonadeStandPractice
     {
         string tolerance;//how they like theire lemonade and what temps it is outisde
         bool isBuying;
-        public void PaymentPrice()
-        {
+        //public void PaymentPrice()
+        //{
            
            // create a list of customers that are different and like different things and make them random 
-        }
+        //}
 
         public Customer()
         {

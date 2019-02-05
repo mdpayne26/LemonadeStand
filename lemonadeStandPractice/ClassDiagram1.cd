@@ -3,7 +3,7 @@
   <Class Name="lemonadeStandPractice.Customer">
     <Position X="9.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAIAAAACAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -20,12 +20,12 @@
   <Class Name="lemonadeStandPractice.Game">
     <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAggAABAABAQIAAgAAAJAAAABAAAQABQARAAQAAAAA=</HashCode>
+      <HashCode>AAAggAABIABAQAAAgAAAJAAAABAAAQABQARAAQAAAAA=</HashCode>
       <FileName>Game.cs</FileName>
       <NewMemberFileName>game.cs</NewMemberFileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Player1" />
+      <Property Name="Day" />
     </ShowAsAssociation>
   </Class>
   <Class Name="lemonadeStandPractice.Program">
@@ -42,15 +42,8 @@
       <FileName>Store.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="lemonadeStandPractice.UserInterface" Collapsed="true">
-    <Position X="12.5" Y="1" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>UserInterface.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="lemonadeStandPractice.Weather">
-    <Position X="9.25" Y="9" Width="1.5" />
+    <Position X="8.25" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAbAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Weather.cs</FileName>
@@ -66,7 +59,7 @@
   <Class Name="lemonadeStandPractice.Recipe">
     <Position X="5.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>Recipe.cs</FileName>
       <NewMemberFileName>recipe.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -116,7 +109,7 @@
   <Class Name="lemonadeStandPractice.Player">
     <Position X="5.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAAAAABAAAAAAAAAAAAAAAAAACAAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAABAAAAAQAAAAAAAIAAAACAAAAACAAAAAgAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
       <NewMemberFileName>player.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -130,6 +123,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lemonadeStandPractice.UserInterface" Collapsed="true">
+    <Position X="12.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAABAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>UserInterface.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="10" />

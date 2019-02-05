@@ -13,10 +13,13 @@ namespace lemonadeStandPractice
         public Sugar sugar;
         public Cup cup;
 
-        //public Inventory()
-        //{
-        //    Lemon lemons = new Lemon();
-        //}
+        public Inventory()
+        {
+            lemons = new Lemon();
+            ice = new Ice();
+            sugar = new Sugar();
+            cup = new Cup();
+        }
 
 
         public Item Item

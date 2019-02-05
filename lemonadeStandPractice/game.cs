@@ -39,6 +39,9 @@ namespace lemonadeStandPractice
         Customer customer = new Customer();
         List<Day> Days = new List<Day>();
         List<Customer> customers = new List<Customer>();
+        //SetDailyPrice setDailyPrice = new SetDailyPrice();
+        Inventory inventory = new Inventory();
+
 
 
         public void DisplayWeather()
@@ -65,31 +68,43 @@ namespace lemonadeStandPractice
             }
         }
 
-        
-        
+
+
 
 
         internal Store Store
         {
-            get => default(Store);
+            get => store;
             set
             {
+                store = value;
             }
         }
 
-        //internal Day Day
-        //{
-        //    get => default(Day);
-        //    set
-        //    {
-        //    }
-        //}
-
-        public Player Player1
+        internal Day Day
         {
-            get => default(Player);
+            get => Day;
             set
             {
+                day = value;
+            }
+        }
+
+        public Player Player
+        {
+            get => Player;
+            set
+            {
+                player = value;
+            }
+        }
+
+        public Inventory Inventory
+        {
+            get => inventory;
+            set
+            {
+                inventory = value;
             }
         }
 
@@ -97,8 +112,32 @@ namespace lemonadeStandPractice
 
         public void RunGame()
         {
-            GenerateDays();
+            UserInterface.DisplayWelcome();
            
+            GenerateDays();
+
+            UserInterface.DisplayPlayerSupply(player.Inventory);
+
+            Console.WriteLine(Store.LemonPrice);
+            int Lemon.amount = UserInterface.GetInt("How many lemons would you like to buy?");
+            Console.WriteLine(Store.SugarPrice);
+            int Sugar = UserInterface.GetInt("How much sugar would you like to buy?");
+            Console.WriteLine(Store.IcePrice);
+            int Ice = UserInterface.GetInt("How many ice cubes would you like to buy?");
+            Console.WriteLine(Store.CupPrice);
+            int Cups = UserInterface.GetInt("How many cups would you like to buy?");
+
+            UserInterface.DisplayPlayerSupply(player.Inventory);
+
+
+
+
+            //Console.WriteLine(Store.LemonPrice);
+            //Console.ReadLine();
+
+
+
+
         }
 
         public void AskPlayAgain()
@@ -106,12 +145,7 @@ namespace lemonadeStandPractice
             
         }
 
-        public void DisplayRules()
-        {
-            
-            
-            
-        }
+        
 
         // difficulty level just changes the amount of starting cash
         //public void DifficultyLevel()
@@ -121,7 +155,8 @@ namespace lemonadeStandPractice
 
         public void RunPurchaseLogic()
         {
-            store.SellLemons(player, 10);
+            string prompt = "Would you like to purchase ingredients?";
+            store.SellLemons(player, UserInterface.GetInt(prompt));
         }
     }
 }

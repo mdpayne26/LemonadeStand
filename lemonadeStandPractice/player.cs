@@ -8,34 +8,53 @@ namespace lemonadeStandPractice
 {
     public class Player
     {
-        public Inventory inventory
+
+        private Inventory inventory;
+        private Wallet wallet;
+        private Recipe recipe;
+        //private SetDailyPrice setDailyPrice;
+
+        public Player()
         {
-            get => default(Inventory);
+            inventory = new Inventory();
+            wallet = new Wallet();
+        }
+
+        public Inventory Inventory
+        {
+            get => inventory;
             set
             {
+                inventory = value;
             }
         }
 
         public Wallet Wallet
         {
-            get => default(Wallet);
+            get => wallet;
             set
             {
+                wallet = value;
             }
         }
 
         public Recipe Recipe
         {
-            get => default(Recipe);
+            get => recipe;
             set
             {
+                recipe = value;
             }
         }
 
-        public void SetDailyPrice()
-        {
-
-        }
+        //public SetDailyPrice setDailyPrice
+        //{
+        //    get =>setDailyPrice;
+        //    set
+        //    {
+        //        setDailyPrice = value;
+        //    }
+        //}
 
     }
 }
