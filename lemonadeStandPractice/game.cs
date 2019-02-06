@@ -32,7 +32,6 @@ namespace lemonadeStandPractice
         //Prices prices;
         
         Store store = new Store();
-        Recipe recipe = new Recipe();
         Player player = new Player();
         Wallet wallet = new Wallet();
         Weather weather = new Weather();
@@ -86,14 +85,6 @@ namespace lemonadeStandPractice
             }
         }
 
-        public Player Player
-        {
-            get => player;
-            set
-            {
-                player = value;
-            }
-        }
 
         public Inventory Inventory
         {
@@ -122,7 +113,7 @@ namespace lemonadeStandPractice
             //Player.Recipe.MakePlayerRecipe(Player.Inventory);
             UserInterface.DisplayPlayerSupply(player.Inventory);
 
-            Day.MakePlayerRecipe(Player, Inventory, recipe);
+            Day.MakePlayerRecipe(player, Inventory, player.recipe);
 
 
         }
@@ -167,9 +158,9 @@ namespace lemonadeStandPractice
             Console.WriteLine("Choose how many lemons you would like in each pitcher made.");
             player.recipe.numLemonPerPitcher = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Choose how many cups of sugar you would like in each pitcher.");
-            player.Recipe.numSugarPerPitcher = int.Parse(Console.ReadLine());
+            player.recipe.numSugarPerPitcher = int.Parse(Console.ReadLine());
             Console.WriteLine("Choose how many ice cubes will be in each cup.");
-            player.Recipe.numIcePerPitcher = int.Parse(Console.ReadLine());
+            player.recipe.numIcePerPitcher = int.Parse(Console.ReadLine());
         }
     }
 }

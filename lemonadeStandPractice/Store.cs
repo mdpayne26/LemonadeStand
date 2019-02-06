@@ -15,7 +15,7 @@ namespace lemonadeStandPractice
         //public double icePrice;
         //public double sugarPrice;
 
-        Player player = new Player();
+        //Player player = new Player();
         private double lemonPrice = .20;
         private double sugarPrice = .25;
         private double cupPrice = .05;
@@ -77,10 +77,9 @@ namespace lemonadeStandPractice
             }
             else
             {
-                Console.WriteLine("you dont have enough money to buy that amount of lemons.");
-
+                Console.WriteLine("You dont have enough money to buy that amount of lemons. Please select another amount.");
                 string promptLemon = "How many lemons would you like to buy";
-
+                SellLemons(player, UserInterface.GetInt(promptLemon));
             }
         }
 
@@ -98,10 +97,9 @@ namespace lemonadeStandPractice
             }
             else
             {
-                Console.WriteLine("you dont have enough money to buy that amount of sugar.");
-
+                Console.WriteLine("You dont have enough money to buy that amount of sugar. Please select another amount.");
                 string promptSugar = "How mmuch sugar would you like to buy";
-
+                SellSugar(player, UserInterface.GetInt(promptSugar));
             }
         }
 
@@ -121,11 +119,11 @@ namespace lemonadeStandPractice
             }
             else
             {
+                Console.WriteLine("You dont have enough money to buy that amount of ice cubes. Please select another amount.");
                 string promptIce = "How many ice cubes would you like to buy?";
                 SellIce(player, UserInterface.GetInt(promptIce));
             }
         }
-
 
         public void SellIce(Player player, int quantity)
         {
@@ -141,14 +139,18 @@ namespace lemonadeStandPractice
             }
             else
             {
+                Console.WriteLine("You dont have enough money to buy that amount of cups. Please select another amount.");
                 string promptCup = "How many cups would you like to buy?";
                 SellCups(player, UserInterface.GetInt(promptCup));
             }
         }
-
     }
 }
+
+
                 
+
+
 
 
 

@@ -12,7 +12,7 @@ namespace lemonadeStandPractice
         Player setDailyPrice;
         List<Customer> customers;
         public Weather weather;
-        //int cups = 10;
+        int cups = 10;
 
 
         public Day()
@@ -27,6 +27,8 @@ namespace lemonadeStandPractice
         
         public void MakePlayerRecipe(Player player, Inventory inventory, Recipe recipe)
         {
+            cups = recipe.numLemonPerPitcher + recipe.numSugarPerPitcher + recipe.numIcePerPitcher;
+
             inventory.lemons.amount -= recipe.numLemonPerPitcher;
             inventory.sugar.amount -= recipe.numSugarPerPitcher;
             inventory.ice.amount -= recipe.numIcePerPitcher;
@@ -35,14 +37,14 @@ namespace lemonadeStandPractice
             Console.WriteLine("enter your price per cup.");
             string price = Console.ReadLine();
             Console.WriteLine("You set your price to: " + price);
-            //cups = player.Recipe.GetLemon() + player.Recipe.GetSugar + player.Recipe.GetIce;
+            
         }
 
         public void GeneratePeople()
         {
-            if (weather.Tempurature > 60)
+            if (weather.Tempurature > 55)
             {
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 100; i++)
                 {
                     customer = new Customer();
                     customers.Add(customer);
@@ -55,9 +57,7 @@ namespace lemonadeStandPractice
                     customer = new Customer();
                     customers.Add(customer);
                 }
-            }
-            
-           
+            }      
         }
 
         

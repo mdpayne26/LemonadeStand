@@ -3,14 +3,14 @@
   <Class Name="lemonadeStandPractice.Customer">
     <Position X="9.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAIAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ABAAAAIAAAABAAAAAAAAoAAAAAEAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Day">
     <Position X="6.25" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAABAQAAAAAAAAAAAAAAABAAACAAAAAAAAQAAAA=</HashCode>
+      <HashCode>AAAAAAABAQAAAAAAAAAAAAAAABAAACAEAAAAAAQAAAg=</HashCode>
       <FileName>Day.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -20,7 +20,7 @@
   <Class Name="lemonadeStandPractice.Game">
     <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAggAABIABAQAAAgAAAJAAAABAAAQABQARAAQAAAAA=</HashCode>
+      <HashCode>AAAggAABIABAAAAAAAAAJAAAABAAAQADQARAAwAAQAA=</HashCode>
       <FileName>Game.cs</FileName>
       <NewMemberFileName>game.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -59,7 +59,7 @@
   <Class Name="lemonadeStandPractice.Recipe">
     <Position X="5.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAEAAAAEAAAAA=</HashCode>
       <FileName>Recipe.cs</FileName>
       <NewMemberFileName>recipe.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -98,7 +98,7 @@
   <Class Name="lemonadeStandPractice.Inventory">
     <Position X="1" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAgAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <HashCode>AABAgABEAAAAQAAAAAAAAAAEAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>Inventory.cs</FileName>
       <NewMemberFileName>inventory.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -109,13 +109,12 @@
   <Class Name="lemonadeStandPractice.Player">
     <Position X="5.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAQAAAAAAAIAAAACAAAAACAAAAAgAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIAAAQAAAAAAAIAAAACAAAAACAAAAAgAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
       <NewMemberFileName>player.cs</NewMemberFileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Wallet" />
-      <Property Name="Recipe" />
     </ShowAsAssociation>
   </Class>
   <Class Name="lemonadeStandPractice.Item">

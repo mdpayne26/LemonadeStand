@@ -39,14 +39,6 @@ namespace lemonadeStandPractice
             }
         }
 
-        public Recipe Recipe
-        {
-            get => recipe;
-            set
-            {
-                recipe = value;
-            }
-        }
         public Day Day
         {
             get => Day;
