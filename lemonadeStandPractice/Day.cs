@@ -34,9 +34,10 @@ namespace lemonadeStandPractice
             inventory.ice.amount -= recipe.numIcePerPitcher;
 
 
-            Console.WriteLine("enter your price per cup.");
+            Console.WriteLine("Enter your price per cup.");
             string price = Console.ReadLine();
-            Console.WriteLine("You set your price to: " + price);
+            Console.WriteLine("Your price per cup is set to: " + price);
+            Console.ReadLine();
             
         }
 
@@ -56,8 +57,9 @@ namespace lemonadeStandPractice
                 {
                     customer = new Customer();
                     customers.Add(customer);
+                    customer.DidBuy();
                 }
-            }      
+            }
         }
 
         
@@ -67,3 +69,5 @@ namespace lemonadeStandPractice
         }
     }
 }
+            
+           

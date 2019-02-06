@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="lemonadeStandPractice.Customer">
-    <Position X="9.25" Y="7.5" Width="1.5" />
+    <Position X="9.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAIAAAABAAAAAAAAoAAAAAEAAAAgAAAAAAAAAAA=</HashCode>
+      <HashCode>ABABAAIAAAABAAAAAAAAoAAAABEAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Day">
-    <Position X="6.25" Y="8" Width="1.5" />
+    <Position X="6" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAABAQAAAAAAAAAAAAAAABAAACAEAAAAAAQAAAg=</HashCode>
       <FileName>Day.cs</FileName>
@@ -20,7 +20,7 @@
   <Class Name="lemonadeStandPractice.Game">
     <Position X="7.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAggAABIABAAAAAAAAAJAAAABAAAQADQARAAwAAQAA=</HashCode>
+      <HashCode>AAAggAABIABAAAAAAAAAJACAABAAAQADQARAAwAAQAA=</HashCode>
       <FileName>Game.cs</FileName>
       <NewMemberFileName>game.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -43,9 +43,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Weather">
-    <Position X="8.25" Y="10" Width="1.5" />
+    <Position X="7.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAbAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAEAAAbAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Weather.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -57,7 +57,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="lemonadeStandPractice.Recipe">
-    <Position X="5.5" Y="0.75" Width="1.5" />
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAEAAAAEAAAAA=</HashCode>
       <FileName>Recipe.cs</FileName>

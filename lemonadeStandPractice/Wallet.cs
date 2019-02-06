@@ -10,7 +10,7 @@ namespace lemonadeStandPractice
         public double Cash = 30;
 
         
-        
+        //public profit
         
     }
 }

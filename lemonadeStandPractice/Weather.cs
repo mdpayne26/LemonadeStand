@@ -10,13 +10,14 @@ namespace lemonadeStandPractice
     {
         public int Tempurature;
         public string Condition;
-        public string[] Connditions = new string[4] { "Sunny", "CLoudy", "Foggy", "Raining" };
-
+        public string[] Conditions = new string[4] { "Sunny", "CLoudy", "Foggy", "Raining" };
+        public string DayOne;
 
         public Weather()
         {
             Tempurature = GetTempurature();
             Condition = GetCondition();
+            //DayOne = GetDay();
         }
 
         public int GetTempurature()
@@ -26,16 +27,22 @@ namespace lemonadeStandPractice
 
             return result;
            
-            //set up each days weather and a forecast for the next day that the player can see, maybe ranomize it
-            //HOW?
+            
         }
         public string GetCondition()
         {
             Random rng = new Random();
             int index = rng.Next(0, 4);
-            string result = Connditions[index];
+            string result = Conditions[index];
 
             return result;
         }
+
+        //public string GetDay()
+        //{
+
+
+        //    return result;
+        //}
     }
 }

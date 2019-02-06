@@ -14,17 +14,33 @@ namespace lemonadeStandPractice
         //price,recipe
         int wallet;
         string tasteTolerance;
+        //int temperature;
+        int price;
+        Weather weather;
+
 
         public Customer()
         {
-            heatTolerance = SetHeatTolereacne();
-            wallet = SetWallet();
-            isBuying = DidBuy();
+
+            //SetHeatTolereacne();
+            SetWallet();
+            DidBuy();
+
         }
 
-        public void SetHeatTolereacne()
+
+        public void SetHeatTolereance(Weather weather)
         {
-            
+            if (weather.Tempurature <= 69)
+            {
+                Random rng = new Random();
+                int result = rng.Next(1,20);
+            }
+            else if (weather.Tempurature >= 70)
+            {
+                Random rng = new Random();
+                int result = rng.Next(1,100);
+            }
         }
         public void SetWallet()
         {
@@ -40,3 +56,5 @@ namespace lemonadeStandPractice
        
         
 
+                
+                

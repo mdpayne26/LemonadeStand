@@ -111,9 +111,11 @@ namespace lemonadeStandPractice
 
             RunRecipeLogic();
             //Player.Recipe.MakePlayerRecipe(Player.Inventory);
-            UserInterface.DisplayPlayerSupply(player.Inventory);
+            //UserInterface.DisplayPlayerSupply(player.Inventory);
 
             Day.MakePlayerRecipe(player, Inventory, player.recipe);
+
+            StartDay();
 
 
         }
@@ -125,11 +127,7 @@ namespace lemonadeStandPractice
 
 
 
-        // difficulty level just changes the amount of starting cash
-        //public void DifficultyLevel()
-        //{
-
-        //}
+        
 
         public void RunPurchaseLogic()
         {
@@ -161,6 +159,11 @@ namespace lemonadeStandPractice
             player.recipe.numSugarPerPitcher = int.Parse(Console.ReadLine());
             Console.WriteLine("Choose how many ice cubes will be in each cup.");
             player.recipe.numIcePerPitcher = int.Parse(Console.ReadLine());
+        }
+
+        public void StartDay()
+        {
+            
         }
     }
 }
