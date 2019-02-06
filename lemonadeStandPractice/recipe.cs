@@ -34,18 +34,18 @@ namespace lemonadeStandPractice
 
 
 
-        public void GetLemon(Player player, int numLemon)
-        {
+        //public void GetLemon(Player player, int numLemon)
+        //{
             
-        }
-        public void GetSugar(Player player, int numSugar)
-        {
-            player.Inventory.sugar.amount = numSugar;
-        }
-        public void GetIce(Player player, int numIce)
-        {
-            player.Inventory.ice.amount = numIce;
-        }
+        //}
+        //public void GetSugar(Player player, int numSugar)
+        //{
+        //    player.Inventory.sugar.amount = numSugar;
+        //}
+        //public void GetIce(Player player, int numIce)
+        //{
+        //    player.Inventory.ice.amount = numIce;
+        //}
 
        
 

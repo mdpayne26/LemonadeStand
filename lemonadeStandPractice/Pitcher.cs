@@ -8,6 +8,6 @@ namespace lemonadeStandPractice
 {
     class Pitcher
     {
-        // public Pitcher = 12Cup;
+        // public Pitcher = 10Cup;
     }
 }

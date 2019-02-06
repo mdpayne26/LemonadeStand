@@ -12,7 +12,7 @@ namespace lemonadeStandPractice
         Player setDailyPrice;
         List<Customer> customers;
         public Weather weather;
-        int cups = 12;
+        //int cups = 10;
 
 
         public Day()
@@ -34,6 +34,7 @@ namespace lemonadeStandPractice
 
             Console.WriteLine("enter your price per cup.");
             string price = Console.ReadLine();
+            Console.WriteLine("You set your price to: " + price);
             //cups = player.Recipe.GetLemon() + player.Recipe.GetSugar + player.Recipe.GetIce;
         }
 

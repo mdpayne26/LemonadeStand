@@ -146,6 +146,7 @@ namespace lemonadeStandPractice
             Console.WriteLine(Store.LemonPrice);
             string promptLemon = "How many lemons would you like to buy";
             store.SellLemons(player, UserInterface.GetInt(promptLemon));
+            //store.BuyLemons();
             Console.WriteLine("Current cash: " + player.Wallet.Cash);
             Console.WriteLine(Store.SugarPrice);
             string promptSugar = "How much sugar would you like to buy?";
